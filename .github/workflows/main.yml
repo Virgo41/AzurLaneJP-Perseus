@@ -22,7 +22,7 @@ jobs:
       - name: Zipalign and Sign Android release
         run: ./zipalign_sign.sh
                     
-      - uses: marvinpinto/action-automatic-releases@v1.2.1
+      - uses: shxrklol/action-auto-releases-n20@v1.1
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
